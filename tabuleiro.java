@@ -168,9 +168,20 @@ public class tabuleiro  {
       
                         else{
                     
-                            System.out.println("está peça está presa, escolha outra");
+             System.out.println("está peça está presa, escolha outra");
                         }
    }
+    if((p4.P == "x1" && p5.P == "x2" || p4.P == "x2" && p5.P == "x1") && p2.disponibilidade == false && p3.disponibilidade == false){
+
+            System.out.println(" você perdeu!");
+        break;
+    }
+       
+    if((p1.P == "x1" && p2.P == "x2" || p1.P == "x2" && p2.P == "x1") && p3.disponibilidade == false && p5.disponibilidade == false){
+
+            System.out.println(" você perdeu!");
+        break;
+    }
 
 
             input.close();
